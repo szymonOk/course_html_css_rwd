@@ -1,0 +1,21 @@
+Wyśrodkowanie elementu:
+
+.el{
+
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+unsplash.it/rozdzielczosc/rozdzielczosc - losowy obrazek
+eggradients.com - gradienty do tła
+page speed insights - szybkość strony
+
+
+kolejność CSS:
+1. position - top - left - right - bottom - transform
+2. display - width - height - margin - padding
+3. background - color - border - box-shadow
+4. font-size - font-weight
+5. cursor - transition

@@ -1,0 +1,23 @@
+
+body{
+    background-color:#333;
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+div p{
+    color: tomato;
+}
+
+.child > p{
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+#test ~ div{
+    background-color: royalBlue;
+}
+
+main + p{
+    text-transform: uppercase;
+}

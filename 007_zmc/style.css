@@ -1,0 +1,100 @@
+body{
+    background-color: #333;
+}
+
+button{
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    /* transform: translateX(-50%); zastąpione calc() */
+    padding: 10px 30px;
+    background-color:rgba(0,0,0,.00001); /*background:none/transparent;*/
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .5s, color 1s;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.btn-zoom{
+    left: calc(30% - 60px);
+}
+
+.btn-zoom:hover ~ .square{
+    width: 150px;
+    height: 150px;
+}
+
+.btn-move{
+    left: calc(50% - 60px);
+}
+
+.btn-move:hover ~ .square{
+    top: 300px;
+}
+
+.btn-color{
+    left: calc(70% - 60px);
+}
+
+.btn-color:hover ~ .blue{
+    background-color: rgb(29, 180, 250);
+    border: 2px solid rgba(0,0,0,.65);
+    box-shadow: 5px 5px 10px #000;
+}
+
+.btn-color:hover ~ .red{
+    background-color: gold;
+    border: 2px solid rgba(0,0,0,.65);
+    box-shadow: 5px 5px 10px #000;
+}
+
+.btn-color:hover ~ .green{
+    background-color: limegreen;
+    border: 2px solid rgba(0,0,0,.65);
+    box-shadow: 5px 5px 10px #000;
+}
+
+.square{
+    position: absolute;
+    top: 120px;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    cursor: pointer;                                                     
+    background-color:black;
+    border:2px solid white;
+}
+
+.blue{
+    left:30%;
+    /*background-color: rgb(29, 180, 250);*/
+    box-shadow: 5px 5px 10px rgb(29, 180, 250);
+                                                                                                /* all dur. ease delay */
+    transition: background-color .4s, border .8s, box-shadow .6s,  width .5s .3s, height .5s .3s, top .1s cubic-bezier(.81,-0.45,.21,1.41) .1s; 
+}
+
+.red{
+    left:50%;
+    /*background-color: goldenrod;*/
+    box-shadow: 5px 5px 10px goldenrod;
+    transition: background-color .4s, border .8s, box-shadow .6s,  width .5s .5s, height .5s .5s, top .3s cubic-bezier(.81,-0.45,.21,1.41) .1s;
+}
+
+.green{
+    left:70%;
+    /*background-color: limegreen;*/
+    box-shadow: 5px 5px 10px limegreen;
+    transition: background-color .4s, border .8s, box-shadow .6s,  width .5s .1s, height .5s .1s, top .5s cubic-bezier(.81,-0.45,.21,1.41) .1s;
+}
+
