@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 80%, rgba(15, 15, 15, 0.55) 95%);
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* NAVIGATION */
+nav{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: rgb(15, 15, 15);
+    text-align: center;
+    line-height: 80px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-mobile{
+    margin-right: 100%;
+}
+
+.nav-mobile button{
+    padding: 0 30px;
+    background: none;
+    border:none;
+    font-size: 32px;
+    line-height: 80px;
+    color: rgb(233, 153, 4);
+}
+
+.nav-desktop{
+    display: none;
+}
+
+/* HEADER */
+.header-img{
+    background-image: url('../img/pizza-4968645_640.jpg');
+    background-position: 23% 40%;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+
+.header-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+.header-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.header-text h1{
+    text-shadow: 3px 3px 5px black;
+    font-size:36px;
+}
+
+.header-text span{
+    color:rgb(233, 153, 4);
+    text-transform: uppercase;
+}
+
+.header-text p{
+    font-size: 17px;
+    text-align: right;
+}
+
+/* MAIN */
+section{
+    padding-top: 50px;
+}
+
+.underline{
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    left: 50%;
+    bottom:-6px;
+    transform: translateX(-50%);
+    height: 4px;
+    border-radius: 15px;
+    width: 60px;
+    background-color: rgb(238, 157, 8);
+}
+
+main h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+section p{
+    margin:0 30px;
+}
+
+.menu{
+    text-align: center; 
+    font-size: 0;
+}
+
+.main-menu{
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+}
+
+.hero-bg{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.65);
+}
+
+.menu-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 4px 6px black;
+    text-transform: uppercase;
+    font-size: 19px;
+}
+
+.menu-text h3{
+    transition: transform .4s;
+}
+
+.main-menu:hover .menu-text h3{
+    transform: scale(1.1);
+}
+
+.first-menu{
+    background-image: url('../img/menu/1/pizza-2446700_640.jpg');
+}
+
+.second-menu{
+    background-image: url('../img/menu/2/pizza-2341377_640.jpg');
+}
+
+.third-menu{
+    background-image: url('../img/menu/3/food-3337657_640.jpg');
+}
+
+.fourth-menu{
+    background-image: url('../img/menu/4/pizza-2978377_640.jpg');
+}
+
+#contact{
+    height: 250px;
+    margin-bottom: 200px;
+}
+
+.contact{
+    position: relative;
+}
+
+.contact-pos{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 180%;
+}
+
+.contact i{
+    margin: 0 10px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.contact h3{
+    margin-top: 40px;
+}
+
+.contact p{
+    margin: 5px 0;
+}
+
+.adress{
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    text-align: center;
+}
+
+@media(min-width:400px){
+    .contact i{
+        display: inline;
+        text-align: left;
+    }
+}

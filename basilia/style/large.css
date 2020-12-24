@@ -1,0 +1,48 @@
+/* (min-width:992px) */
+
+/* HEADER */
+.header-img{
+    background-image: url('../img/pizza-4968645_1920.jpg');
+    background-position: 12% 55%;
+}
+
+.header-text h1{
+    font-size: 60px;
+}
+
+.header-text p{
+    font-size: 26px;
+}
+
+@media(min-width:1900px)
+{
+    .header-img{
+        background-size: cover;
+    }
+}
+
+/* MAIN */
+.main-menu{
+    height: 400px;
+    width: 50%;
+}
+
+.menu-text h3{
+    font-size: 40px;
+}
+
+.first-menu{
+    background-image: url('../img/menu/1/pizza-2446700_1920.jpg');
+}
+
+.second-menu{
+    background-image: url('../img/menu/2/pizza-2341377_1920.jpg');
+}
+
+.third-menu{
+    background-image: url('../img/menu/3/food-3337657_1920.jpg');
+}
+
+.fourth-menu{
+    background-image: url('../img/menu/4/pizza-2978377_1920.jpg');
+}

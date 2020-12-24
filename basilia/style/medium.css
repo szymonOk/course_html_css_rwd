@@ -1,0 +1,36 @@
+/* (min-width:768px) */
+
+/* NAV */
+.nav-mobile{
+    display: none;
+}
+
+.nav-desktop{
+    display: block;
+    font-size: 0;
+}
+
+.nav-desktop li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-desktop li a{
+    padding: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size:20px;
+    transition: color .3s;
+}
+
+.nav-desktop li a:hover{
+    color: rgb(233, 153, 4);
+}
+
+/* MAIN */
+
+main h2{
+    margin-top: 50px;
+}
