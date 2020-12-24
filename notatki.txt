@@ -1,4 +1,4 @@
-Wyśrodkowanie elementu:
+wyśrodkowanie elementu:
 
 .el{
 
