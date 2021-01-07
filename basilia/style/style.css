@@ -42,6 +42,53 @@ nav{
     font-size: 32px;
     line-height: 80px;
     color: rgb(233, 153, 4);
+    cursor: pointer;
+    transition: transform .4s, color .2s;
+}
+
+.nav-mobile button:hover{
+    color: white;
+}
+
+.menu-box{
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+}
+
+.aside-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    height: 300px;
+    width: 200px;
+    background-color: rgba(15, 15, 15, .95);
+    transition: left .5s;
+}
+
+.aside-menu li{
+    list-style: none;
+}
+
+.aside-menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:20px;
+    transition: color .3s;
+}
+
+.aside-menu li a:hover{
+    color: rgb(233, 153, 4);
+}
+
+.active{
+    left: 0;
 }
 
 .nav-desktop{

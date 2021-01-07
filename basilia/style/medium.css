@@ -5,6 +5,10 @@
     display: none;
 }
 
+.aside-menu{
+    display: none;
+}
+
 .nav-desktop{
     display: block;
     font-size: 0;
